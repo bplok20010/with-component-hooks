@@ -15,10 +15,10 @@ module.exports = function WithComponentHooks(target) {
    *  }
    * }
    */
-  if (typeof target === "object" && target.children) {
-    return typeof target.props.children === "function"
-      ? target.props.children()
-      : target.props.children;
+  if (typeof target === "object" && target !== null && target.children) {
+    return typeof target.children === "function"
+      ? target.children()
+      : target.children;
   }
 
   /**
