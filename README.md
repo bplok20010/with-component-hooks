@@ -2,7 +2,7 @@
 
 Use React hooks in class component
 
-## install & useage
+## Install
 
 `npm install --save with-component-hooks`
 
