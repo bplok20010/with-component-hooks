@@ -1,0 +1,32 @@
+{
+  "name": "with-component-hooks",
+  "version": "1.1.0",
+  "description": "use React hooks in class component",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "*.js",
+    "*.d.ts",
+    "*.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bplok20010/with-component-hooks.git"
+  },
+  "keywords": [
+    "react-hooks",
+    "react-component-hooks"
+  ],
+  "author": "nobo.zhou@foxmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bplok20010/with-component-hooks/issues"
+  },
+  "homepage": "https://github.com/bplok20010/with-component-hooks#readme",
+  "peerDependencies": {
+    "react": "^16.8.0"
+  }
+}
