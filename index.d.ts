@@ -1,9 +1,7 @@
 import React from "react";
 interface Props {
-  children: () => React.ReactNode;
+  children: () => React.ReactElement;
 }
-declare function withComponentHooks(
-  target: React.ReactElement<Props>
-): React.ReactNode;
-declare function withComponentHooks(target: React.Component): React.Component;
-export default withComponentHooks;
+declare function WithComponentHooks(target: Props): React.ReactElement;
+declare function WithComponentHooks(target: React.Component): React.Component;
+export default WithComponentHooks;

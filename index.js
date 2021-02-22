@@ -2,16 +2,16 @@ var React = require("react");
 
 var P_KEY = "__$RCH__";
 
-module.exports = function withComponentHooks(target) {
+module.exports = function WithComponentHooks(target) {
   /**
    * @examples
    * class MyApp extends React.Component {
    *  render(){
-   *    return <withComponentHooks>{() => {
+   *    return <WithComponentHooks>{() => {
    *      const [value, setValue] = React.useState(0)
    *      ...
    *      return <button>test</button>
-   *    }}</withComponentHooks>
+   *    }}</WithComponentHooks>
    *  }
    * }
    */

@@ -8,7 +8,7 @@ use React hooks in class component
 
 ## Part 1
 
-Use `withComponentHooks` as `React.ElementType`
+Use `WithComponentHooks` as `React.ElementType`
 
 ```ts
 interface Props {
@@ -17,12 +17,12 @@ interface Props {
 ```
 
 ```tsx
-import withComponentHooks from "with-component-hooks";
+import WithComponentHooks from "with-component-hooks";
 
 export default class MyComponent extends React.Component {
   render() {
     return (
-      <withComponentHooks>
+      <WithComponentHooks>
         {() => {
           const [counter, set] = React.useState(0);
 
@@ -30,7 +30,7 @@ export default class MyComponent extends React.Component {
 
           return <div>{counter}</div>;
         }}
-      </withComponentHooks>
+      </WithComponentHooks>
     );
   }
 }
@@ -41,7 +41,7 @@ export default class MyComponent extends React.Component {
 Use hooks in render method
 
 ```tsx
-import withComponentHooks from "with-component-hooks";
+import WithComponentHooks from "with-component-hooks";
 
 class MyComponent extends React.Component {
   render() {
@@ -53,15 +53,15 @@ class MyComponent extends React.Component {
   }
 }
 
-export default withComponentHooks(MyComponent);
+export default WithComponentHooks(MyComponent);
 ```
 
 Use decorator
 
 ```tsx
-import withComponentHooks from "with-component-hooks";
+import WithComponentHooks from "with-component-hooks";
 
-@withComponentHooks
+@WithComponentHooks
 export default class MyComponent extends React.Component {
   render() {
     const [counter, set] = React.useState(0);
