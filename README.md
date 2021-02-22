@@ -1,6 +1,6 @@
 # with-component-hooks
 
-use React hooks in class component
+Use React hooks in class component
 
 ## install & useage
 

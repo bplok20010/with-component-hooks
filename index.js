@@ -15,7 +15,7 @@ module.exports = function WithComponentHooks(target) {
    *  }
    * }
    */
-  if (React.isValidElement(target)) {
+  if (typeof target === "object" && target.children) {
     return typeof target.props.children === "function"
       ? target.props.children()
       : target.props.children;
